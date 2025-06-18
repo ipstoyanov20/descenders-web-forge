@@ -34,13 +34,14 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="gallery" className="py-12 sm:py-16 lg:py-20 bg-black">
+    <section id="gallery" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-paper-gray to-white">
+      <div className="racing-stripe mb-8"></div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 gaming-text-gradient">
+          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 racing-text-gradient">
             Game Gallery
           </h2>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-rajdhani px-4">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto font-rajdhani px-4">
             Experience the thrill and beauty of extreme mountain biking in Descenders
           </p>
         </div>
@@ -49,7 +50,7 @@ const GallerySection = () => {
           {images.map((image, index) => (
             <div 
               key={index}
-              className="relative group overflow-hidden rounded-xl gaming-border-gradient"
+              className="relative group overflow-hidden rounded-xl racing-border-gradient paper-shadow"
             >
               <div className="aspect-video">
                 <img 
@@ -58,7 +59,7 @@ const GallerySection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-racing-red/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
                     <h3 className="font-orbitron font-bold text-white text-sm sm:text-lg">
                       {image.title}
@@ -70,6 +71,7 @@ const GallerySection = () => {
           ))}
         </div>
       </div>
+      <div className="racing-stripe mt-8"></div>
     </section>
   );
 };

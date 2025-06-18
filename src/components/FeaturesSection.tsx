@@ -36,13 +36,13 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section id="features" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-black to-gray-900">
+    <section id="features" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-white to-red-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 gaming-text-gradient">
+          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 racing-text-gradient">
             Game Features
           </h2>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-rajdhani px-4">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto font-rajdhani px-4">
             Discover what makes Descenders the ultimate extreme mountain biking experience
           </p>
         </div>
@@ -51,18 +51,18 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="bg-gray-800/50 border-gray-700 hover:border-gaming-purple/50 transition-all duration-300 hover:scale-105 group h-full"
+              className="bg-white/80 border-red-200 hover:border-racing-red/50 transition-all duration-300 hover:scale-105 group h-full paper-shadow"
             >
               <CardHeader className="text-center pb-4">
                 <div className="text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
-                <CardTitle className="font-orbitron font-bold text-lg sm:text-xl text-white group-hover:text-gaming-purple transition-colors">
+                <CardTitle className="font-orbitron font-bold text-lg sm:text-xl text-gray-800 group-hover:text-racing-red transition-colors">
                   {feature.title}
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-300 font-rajdhani leading-relaxed text-sm sm:text-base">
+                <p className="text-gray-600 font-rajdhani leading-relaxed text-sm sm:text-base">
                   {feature.description}
                 </p>
               </CardContent>

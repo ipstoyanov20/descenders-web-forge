@@ -39,13 +39,14 @@ const BlogSection = () => {
   ];
 
   return (
-    <section id="blog" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-gray-900 to-black">
+    <section id="blog" className="py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-red-50 to-paper-gray">
+      <div className="racing-stripe mb-8"></div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 gaming-text-gradient">
+          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 racing-text-gradient">
             Latest News & Updates
           </h2>
-          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-rajdhani px-4">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto font-rajdhani px-4">
             Stay updated with the latest tips, tricks, and community highlights from the world of Descenders
           </p>
         </div>
@@ -54,7 +55,7 @@ const BlogSection = () => {
           {blogPosts.map((post, index) => (
             <Card 
               key={index}
-              className="bg-gray-800/50 border-gray-700 hover:border-gaming-purple/50 transition-all duration-300 hover:scale-105 group overflow-hidden h-full flex flex-col"
+              className="bg-white/90 border-red-200 hover:border-racing-red/50 transition-all duration-300 hover:scale-105 group overflow-hidden h-full flex flex-col paper-shadow"
             >
               <div className="aspect-video overflow-hidden">
                 <img 
@@ -66,30 +67,30 @@ const BlogSection = () => {
               
               <CardHeader className="flex-grow">
                 <div className="flex items-center justify-between mb-2 flex-wrap gap-2">
-                  <span className="bg-gaming-purple px-3 py-1 rounded-full text-xs font-rajdhani font-semibold">
+                  <span className="bg-racing-red text-white px-3 py-1 rounded-full text-xs font-rajdhani font-semibold">
                     {post.category}
                   </span>
-                  <span className="text-gray-400 text-xs sm:text-sm font-rajdhani">
+                  <span className="text-gray-500 text-xs sm:text-sm font-rajdhani">
                     {post.readTime}
                   </span>
                 </div>
-                <CardTitle className="font-orbitron font-bold text-lg sm:text-xl text-white group-hover:text-gaming-purple transition-colors leading-tight">
+                <CardTitle className="font-orbitron font-bold text-lg sm:text-xl text-gray-800 group-hover:text-racing-red transition-colors leading-tight">
                   {post.title}
                 </CardTitle>
               </CardHeader>
               
               <CardContent className="mt-auto">
-                <p className="text-gray-300 font-rajdhani leading-relaxed mb-4 text-sm sm:text-base">
+                <p className="text-gray-600 font-rajdhani leading-relaxed mb-4 text-sm sm:text-base">
                   {post.excerpt}
                 </p>
                 <div className="flex items-center justify-between flex-wrap gap-2">
-                  <span className="text-gray-400 text-xs sm:text-sm font-rajdhani">
+                  <span className="text-gray-500 text-xs sm:text-sm font-rajdhani">
                     {post.date}
                   </span>
                   <Button 
                     variant="ghost" 
                     size="sm"
-                    className="text-gaming-purple hover:text-white hover:bg-gaming-purple/20 font-rajdhani text-sm"
+                    className="text-racing-red hover:text-white hover:bg-racing-red/20 font-rajdhani text-sm"
                   >
                     Read More
                   </Button>

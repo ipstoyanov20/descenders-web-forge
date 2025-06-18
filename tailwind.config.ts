@@ -63,11 +63,11 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				'gaming-purple': '#8B5CF6',
-				'gaming-blue': '#3B82F6',
-				'gaming-orange': '#F97316',
-				'gaming-pink': '#EC4899',
-				'gaming-green': '#10B981'
+				'racing-red': '#DC2626',
+				'racing-red-light': '#EF4444',
+				'racing-red-dark': '#B91C1C',
+				'paper-white': '#FAFAFA',
+				'paper-gray': '#F5F5F5'
 			},
 			fontFamily: {
 				'orbitron': ['Orbitron', 'monospace'],
@@ -97,10 +97,10 @@ export default {
 				},
 				'pulse-glow': {
 					'0%, 100%': {
-						boxShadow: '0 0 20px rgba(139, 92, 246, 0.4)'
+						boxShadow: '0 0 20px rgba(220, 38, 38, 0.4)'
 					},
 					'50%': {
-						boxShadow: '0 0 40px rgba(139, 92, 246, 0.8)'
+						boxShadow: '0 0 40px rgba(220, 38, 38, 0.8)'
 					}
 				},
 				'float': {
