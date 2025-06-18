@@ -2,6 +2,7 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   const location = useLocation();
@@ -25,12 +26,13 @@ const NotFound = () => {
               <p className="text-gray-700 font-rajdhani text-sm sm:text-base mb-6">
                 Oops! The page you're looking for has taken a different trail. Let's get you back on track!
               </p>
-              <Button 
-                onClick={() => window.location.href = '/'}
-                className="racing-gradient hover:scale-105 transition-transform font-rajdhani font-semibold text-white"
-              >
-                🏠 Return to Home
-              </Button>
+              <Link to="/">
+                <Button 
+                  className="racing-gradient hover:scale-105 transition-transform font-rajdhani font-semibold text-white"
+                >
+                  🏠 Return to Home
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

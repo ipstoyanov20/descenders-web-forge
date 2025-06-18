@@ -1,13 +1,14 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const ContactSection = () => {
   return (
     <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-black">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 gaming-text-gradient">
+          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 racing-text-gradient">
             Get In Touch
           </h2>
           <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-rajdhani px-4">
@@ -21,9 +22,9 @@ const ContactSection = () => {
               Developer Information
             </h3>
             
-            <Card className="bg-gray-800/50 border-gray-700 mb-6">
+            <Card className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-colors mb-6">
               <CardHeader>
-                <CardTitle className="font-orbitron text-gaming-purple flex items-center gap-3 text-lg sm:text-xl">
+                <CardTitle className="font-orbitron text-racing-red flex items-center gap-3 text-lg sm:text-xl">
                   🏢 About Noodlecake Studios
                 </CardTitle>
               </CardHeader>
@@ -43,9 +44,9 @@ const ContactSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gray-800/50 border-gray-700">
+            <Card className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-colors">
               <CardHeader>
-                <CardTitle className="font-orbitron text-gaming-purple flex items-center gap-3 text-lg sm:text-xl">
+                <CardTitle className="font-orbitron text-racing-red flex items-center gap-3 text-lg sm:text-xl">
                   🎮 App Support
                 </CardTitle>
               </CardHeader>
@@ -58,7 +59,7 @@ const ContactSection = () => {
                     <strong className="text-white">Support Email:</strong> support@noodlecake.com
                   </p>
                   <Button 
-                    className="gaming-gradient hover:scale-105 transition-transform font-rajdhani font-semibold w-full sm:w-auto"
+                    className="racing-gradient hover:scale-105 transition-transform font-rajdhani font-semibold w-full sm:w-auto text-white"
                     onClick={() => window.open('mailto:support@noodlecake.com?subject=Descenders Support Request', '_blank')}
                   >
                     Contact Support
@@ -68,13 +69,14 @@ const ContactSection = () => {
                   <p className="text-gray-300 mb-3 text-sm sm:text-base">
                     <strong className="text-white">Privacy Policy:</strong>
                   </p>
-                  <Button 
-                    variant="outline"
-                    className="border-gaming-purple text-gaming-purple hover:bg-gaming-purple hover:text-white font-rajdhani w-full sm:w-auto"
-                    onClick={() => window.open('/privacy/', '_blank')}
-                  >
-                    View Privacy Policy
-                  </Button>
+                  <Link to="/privacy">
+                    <Button 
+                      variant="outline"
+                      className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white transition-colors font-rajdhani w-full sm:w-auto"
+                    >
+                      View Privacy Policy
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
@@ -86,14 +88,14 @@ const ContactSection = () => {
             </h3>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 2xl:grid-cols-2 gap-4 mb-6">
-              <Card className="bg-gradient-to-br from-gaming-purple/20 to-gaming-blue/20 border-gaming-purple/30 hover:scale-105 transition-transform cursor-pointer">
+              <Card className="bg-gradient-to-br from-racing-red/20 to-paper-white/10 border-racing-red/30 hover:scale-105 hover:from-racing-red/30 hover:to-paper-white/20 transition-all cursor-pointer">
                 <CardContent className="p-4 sm:p-6 text-center">
                   <div className="text-2xl sm:text-3xl mb-3">📱</div>
                   <h4 className="font-orbitron font-bold text-white mb-2 text-sm sm:text-base">Download Game</h4>
                   <p className="text-gray-300 font-rajdhani text-xs sm:text-sm mb-4">Get Descenders on Google Play</p>
                   <Button 
                     size="sm"
-                    className="gaming-gradient font-rajdhani text-xs sm:text-sm w-full"
+                    className="racing-gradient hover:scale-105 transition-transform font-rajdhani text-xs sm:text-sm w-full text-white"
                     onClick={() => window.open('https://play.google.com/store/apps/details?id=com.noodlecake.descenders', '_blank')}
                   >
                     Play Store
@@ -101,36 +103,38 @@ const ContactSection = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-gradient-to-br from-gaming-blue/20 to-gaming-orange/20 border-gaming-blue/30 hover:scale-105 transition-transform cursor-pointer">
+              <Card className="bg-gradient-to-br from-paper-white/20 to-racing-red/10 border-paper-white/30 hover:scale-105 hover:from-paper-white/30 hover:to-racing-red/20 transition-all cursor-pointer">
                 <CardContent className="p-4 sm:p-6 text-center">
                   <div className="text-2xl sm:text-3xl mb-3">📄</div>
                   <h4 className="font-orbitron font-bold text-white mb-2 text-sm sm:text-base">Terms & Policies</h4>
                   <p className="text-gray-300 font-rajdhani text-xs sm:text-sm mb-4">Legal information</p>
                   <div className="space-y-2">
-                    <Button 
-                      size="sm" 
-                      variant="outline"
-                      className="border-gaming-blue text-gaming-blue hover:bg-gaming-blue hover:text-white font-rajdhani w-full text-xs sm:text-sm"
-                      onClick={() => window.open('/terms/', '_blank')}
-                    >
-                      Terms of Service
-                    </Button>
-                    <Button 
-                      size="sm" 
-                      variant="outline"
-                      className="border-gaming-blue text-gaming-blue hover:bg-gaming-blue hover:text-white font-rajdhani w-full text-xs sm:text-sm"
-                      onClick={() => window.open('/cookies/', '_blank')}
-                    >
-                      Cookies Policy
-                    </Button>
+                    <Link to="/terms">
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white transition-colors font-rajdhani w-full text-xs sm:text-sm"
+                      >
+                        Terms of Service
+                      </Button>
+                    </Link>
+                    <Link to="/cookies">
+                      <Button 
+                        size="sm" 
+                        variant="outline"
+                        className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white transition-colors font-rajdhani w-full text-xs sm:text-sm"
+                      >
+                        Cookies Policy
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
             </div>
 
-            <Card className="bg-gray-800/50 border-gray-700">
+            <Card className="bg-gray-800/50 border-gray-700 hover:bg-gray-800/70 transition-colors">
               <CardHeader>
-                <CardTitle className="font-orbitron text-gaming-purple text-lg sm:text-xl">
+                <CardTitle className="font-orbitron text-racing-red text-lg sm:text-xl">
                   🌟 Rate Our Game
                 </CardTitle>
               </CardHeader>
@@ -139,7 +143,7 @@ const ContactSection = () => {
                   Loving Descenders? Help us by leaving a review on the Google Play Store!
                 </p>
                 <Button 
-                  className="gaming-gradient hover:scale-105 transition-transform font-rajdhani font-semibold w-full sm:w-auto"
+                  className="racing-gradient hover:scale-105 transition-transform font-rajdhani font-semibold w-full sm:w-auto text-white"
                   onClick={() => window.open('https://play.google.com/store/apps/details?id=com.noodlecake.descenders', '_blank')}
                 >
                   Leave a Review

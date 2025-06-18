@@ -1,5 +1,5 @@
-
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Cookies = () => {
   return (
@@ -9,13 +9,14 @@ const Cookies = () => {
         <div className="container mx-auto px-4 py-12 sm:py-20">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8 sm:mb-12">
-              <Button 
-                onClick={() => window.history.back()}
-                variant="outline"
-                className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white font-rajdhani mb-6 text-sm sm:text-base"
-              >
-                ← Back to Home
-              </Button>
+              <Link to="/">
+                <Button 
+                  variant="outline"
+                  className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white transition-colors font-rajdhani mb-6 text-sm sm:text-base"
+                >
+                  ← Back to Home
+                </Button>
+              </Link>
               <div className="racing-border-gradient mb-6">
                 <div className="p-6 sm:p-8">
                   <h1 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl racing-text-gradient mb-4">

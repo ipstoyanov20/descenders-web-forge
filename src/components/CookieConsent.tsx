@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from 'react-router-dom';
 
 const CookieConsent = () => {
   const [showConsent, setShowConsent] = useState(false);
@@ -45,15 +46,15 @@ const CookieConsent = () => {
               <Button 
                 onClick={declineCookies}
                 variant="outline"
-                className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white font-rajdhani flex-1 text-xs sm:text-sm"
+                className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white transition-colors font-rajdhani flex-1 text-xs sm:text-sm"
               >
                 Decline
               </Button>
             </div>
             <p className="text-gray-500 font-rajdhani text-xs mt-2">
-              <a href="/cookies" className="hover:text-racing-red transition-colors">
+              <Link to="/cookies" className="hover:text-racing-red transition-colors">
                 Read our full Cookies Policy
-              </a>
+              </Link>
             </p>
           </CardContent>
         </div>
