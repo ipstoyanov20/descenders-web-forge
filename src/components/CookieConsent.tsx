@@ -26,25 +26,25 @@ const CookieConsent = () => {
   if (!showConsent) return null;
 
   return (
-    <div className="fixed bottom-4 left-4 right-4 z-50 max-w-md mx-auto">
+    <div className="fixed bottom-2 sm:bottom-4 left-2 sm:left-4 right-2 sm:right-4 z-50 max-w-sm sm:max-w-md mx-auto">
       <Card className="bg-gray-900/95 border-gaming-purple/50 backdrop-blur-md">
-        <CardContent className="p-6">
-          <h3 className="font-orbitron font-bold text-white mb-2">🍪 Cookie Policy</h3>
-          <p className="text-gray-300 font-rajdhani text-sm mb-4 leading-relaxed">
+        <CardContent className="p-4 sm:p-6">
+          <h3 className="font-orbitron font-bold text-white mb-2 text-sm sm:text-base">🍪 Cookie Policy</h3>
+          <p className="text-gray-300 font-rajdhani text-xs sm:text-sm mb-4 leading-relaxed">
             We use cookies to enhance your gaming experience, analyze site traffic, and personalize content. 
             By continuing to use our site, you consent to our use of cookies.
           </p>
           <div className="flex flex-col sm:flex-row gap-2">
             <Button 
               onClick={acceptCookies}
-              className="gaming-gradient hover:scale-105 transition-transform font-rajdhani font-semibold flex-1"
+              className="gaming-gradient hover:scale-105 transition-transform font-rajdhani font-semibold flex-1 text-xs sm:text-sm"
             >
               Accept All
             </Button>
             <Button 
               onClick={declineCookies}
               variant="outline"
-              className="border-gray-600 text-gray-300 hover:bg-gray-800 font-rajdhani flex-1"
+              className="border-gray-600 text-gray-300 hover:bg-gray-800 font-rajdhani flex-1 text-xs sm:text-sm"
             >
               Decline
             </Button>

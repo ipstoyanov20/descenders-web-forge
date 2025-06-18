@@ -34,18 +34,18 @@ const GallerySection = () => {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-black">
+    <section id="gallery" className="py-12 sm:py-16 lg:py-20 bg-black">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="font-orbitron font-bold text-4xl md:text-5xl mb-6 gaming-text-gradient">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="font-orbitron font-bold text-3xl sm:text-4xl lg:text-5xl mb-4 sm:mb-6 gaming-text-gradient">
             Game Gallery
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto font-rajdhani">
+          <p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto font-rajdhani px-4">
             Experience the thrill and beauty of extreme mountain biking in Descenders
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
           {images.map((image, index) => (
             <div 
               key={index}
@@ -59,8 +59,8 @@ const GallerySection = () => {
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <h3 className="font-orbitron font-bold text-white text-lg">
+                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
+                    <h3 className="font-orbitron font-bold text-white text-sm sm:text-lg">
                       {image.title}
                     </h3>
                   </div>
