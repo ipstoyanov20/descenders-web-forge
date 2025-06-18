@@ -13,7 +13,7 @@ const HeroSection = () => {
       
       <div className="container mx-auto text-center relative z-10 max-w-6xl">
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-orbitron font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 text-shadow leading-tight">
+          <h1 className="font-orbitron font-black text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 text-shadow leading-tight">
             <span className="gaming-text-gradient">DESCENDERS</span>
           </h1>
           
@@ -27,9 +27,9 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="gaming-gradient hover:scale-105 transition-all duration-300 neon-glow font-rajdhani font-bold text-base sm:text-lg px-6 sm:px-8 py-3 w-full sm:w-auto"
-              onClick={() => window.open('https://play.google.com/store/apps/details?id=com.noodlecake.descenders', '_blank')}
+              onClick={() => window.open('https://apps.apple.com/us/app/descenders/id1604675493', '_blank')}
             >
-              Download Free
+              Download in app store
             </Button>
             <Button 
               size="lg" 

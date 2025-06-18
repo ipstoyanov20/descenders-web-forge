@@ -26,7 +26,7 @@ const BlogSection = () => {
       date: "December 5, 2024",
       readTime: "6 min read",
       category: "Guide",
-      image: "https://images.unsplash.com/photo-1544966503-7cc5ac882d5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+      image: "https://images.unsplash.com/photo-1502744688674-c619d1586c9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       title: "Community Spotlight: Best User-Created Moments",
