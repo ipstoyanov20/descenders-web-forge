@@ -73,8 +73,8 @@ const PhysicsControls = () => {
                   <Link to="/news/procedural-world-generation" className="block text-racing-red hover:text-racing-red-dark transition-colors">
                     → The Art of Procedural World Generation
                   </Link>
-                  <a href="https://store.steampowered.com/app/466860/Descenders/" target="_blank" rel="noopener noreferrer" className="block text-racing-red hover:text-racing-red-dark transition-colors">
-                    → Official Descenders Steam Page
+                  <a href="https://descenders.fandom.com/wiki/How_to_play_guide_for_Descenders" target="_blank" rel="noopener noreferrer" className="block text-racing-red hover:text-racing-red-dark transition-colors">
+                    → How to Play Guide for Descenders
                   </a>
                 </div>
               </div>

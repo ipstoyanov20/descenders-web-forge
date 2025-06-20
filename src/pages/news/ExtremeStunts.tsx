@@ -83,8 +83,8 @@ const ExtremeStunts = () => {
                   <Link to="/news/community-spotlight" className="block text-racing-red hover:text-racing-red-dark transition-colors">
                     → Community Spotlight: Best User-Created Moments
                   </Link>
-                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" className="block text-racing-red hover:text-racing-red-dark transition-colors">
-                    → Watch Professional Stunt Tutorials on YouTube
+                  <a href="https://descenders.fandom.com/wiki/How_to_play_guide_for_Descenders" target="_blank" rel="noopener noreferrer" className="block text-racing-red hover:text-racing-red-dark transition-colors">
+                    → How to Play Guide for Descenders
                   </a>
                 </div>
               </div>
