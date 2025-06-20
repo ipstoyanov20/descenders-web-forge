@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:col-span-2 xl:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-gaming-purple to-gaming-blue rounded-lg flex items-center justify-center">
-                <span className="text-white font-orbitron font-bold text-base sm:text-lg">D</span>
+                <img src='/favicon.ico' className="text-white font-orbitron rounded-lg font-bold text-base sm:text-lg" />
               </div>
               <h3 className="font-orbitron font-bold text-xl sm:text-2xl gaming-text-gradient">
                 DESCENDERS

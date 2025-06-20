@@ -32,7 +32,7 @@ const Header = () => {
         <nav className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-gaming-purple to-gaming-blue rounded-lg flex items-center justify-center">
-              <img src='/favicon.ico' className="text-white font-orbitron font-bold text-base sm:text-lg" />
+              <img src='/favicon.ico' className="text-white font-orbitron font-bold rounded-lg text-base sm:text-lg" />
             </div>
             <h1 className="font-orbitron font-bold text-lg sm:text-2xl gaming-text-gradient">
               DESCENDERS

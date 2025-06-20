@@ -92,7 +92,7 @@ const ContactSection = () => {
                 <CardContent className="p-4 sm:p-6 text-center">
                   <div className="text-2xl sm:text-3xl mb-3">📱</div>
                   <h4 className="font-orbitron font-bold text-white mb-2 text-sm sm:text-base">Download Game</h4>
-                  <p className="text-gray-300 font-rajdhani text-xs sm:text-sm mb-4">Get Descenders on Google Play</p>
+                  <p className="text-black font-rajdhani text-xs sm:text-sm mb-4">Get Descenders on Google Play</p>
                   <Button 
                     size="sm"
                     className="racing-gradient hover:scale-105 transition-transform font-rajdhani text-xs sm:text-sm w-full text-white"
@@ -107,13 +107,13 @@ const ContactSection = () => {
                 <CardContent className="p-4 sm:p-6 text-center">
                   <div className="text-2xl sm:text-3xl mb-3">📄</div>
                   <h4 className="font-orbitron font-bold text-white mb-2 text-sm sm:text-base">Terms & Policies</h4>
-                  <p className="text-gray-300 font-rajdhani text-xs sm:text-sm mb-4">Legal information</p>
+                  <p className="text-black font-rajdhani text-xs sm:text-sm mb-4">Legal information</p>
                   <div className="space-y-2">
                     <Link to="/terms">
                       <Button 
                         size="sm" 
                         variant="outline"
-                        className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white transition-colors font-rajdhani w-full text-xs sm:text-sm"
+                        className="border-racing-red mb-3 text-racing-red hover:bg-racing-red hover:text-white transition-colors font-rajdhani w-full text-xs sm:text-sm"
                       >
                         Terms of Service
                       </Button>
