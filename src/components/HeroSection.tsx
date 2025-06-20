@@ -30,15 +30,15 @@ const HeroSection = () => {
               className="racing-gradient hover:scale-105 transition-all duration-300 paper-shadow font-rajdhani font-bold text-base sm:text-lg px-6 sm:px-8 py-3 w-full sm:w-auto text-white"
               onClick={() => window.open('https://apps.apple.com/us/app/descenders/id1604675493', '_blank')}
             >
-              Download in app store
+              Download on App Store
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
               className="border-racing-red text-racing-red hover:bg-racing-red hover:text-white transition-all duration-300 font-rajdhani font-bold text-base sm:text-lg px-6 sm:px-8 py-3 w-full sm:w-auto"
-              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open('https://play.google.com/store/apps/details?id=com.noodlecake.descenders', '_blank')}
             >
-              Learn More
+              Download on Google Play
             </Button>
           </div>
           

@@ -1,34 +1,33 @@
-
 const GallerySection = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "mountain-biking-downhill-action",
+      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_615455299355eaf552c0d7b0b967d1e40a0ab227.1920x1080.jpg",
+      alt: "descenders-downhill-mountain-biking-action",
       title: "Extreme Downhill Racing"
     },
     {
-      url: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "mountain-bike-jump-stunt",
+      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_34a1183cdb9b0b86bb1dd2c83e7b2c70b45aa617.1920x1080.jpg",
+      alt: "descenders-bike-jump-stunt",
       title: "Death-Defying Stunts"
     },
     {
-      url: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "mountain-biking-forest-trail",
+      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_6c94c5d42a4c39c4a7dad0d4d8b8fcce5f9e4b9e.1920x1080.jpg",
+      alt: "descenders-forest-trail-biking",
       title: "Forest Trail Adventures"
     },
     {
-      url: "https://images.unsplash.com/photo-1502744688674-c619d1586c9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "mountain-bike-sunset-ride",
+      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_41e3c83dcebfb6a6d6bf5b87abf1b7c0c6d57bd7.1920x1080.jpg",
+      alt: "descenders-mountain-sunset-ride",
       title: "Epic Mountain Views"
     },
     {
-      url: "https://images.unsplash.com/photo-1502744688674-c619d1586c9e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "professional-mountain-biker",
+      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_86b9e2c6efb9e55b5a3fe5b10c5a9fe17cf91e6b.1920x1080.jpg",
+      alt: "descenders-professional-gameplay",
       title: "Professional Gameplay"
     },
     {
-      url: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      alt: "mountain-biking-competition",
+      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_7a8b8d3c5a5c5e5c4c6b7d8e9f0a1b2c3d4e5f6.1920x1080.jpg",
+      alt: "descenders-competitive-racing",
       title: "Competitive Racing"
     }
   ];
