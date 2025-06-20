@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
@@ -74,7 +73,7 @@ const PhysicsControls = () => {
                     → The Art of Procedural World Generation
                   </Link>
                   <a href="https://descenders.fandom.com/wiki/How_to_play_guide_for_Descenders" target="_blank" rel="noopener noreferrer" className="block text-racing-red hover:text-racing-red-dark transition-colors">
-                    → How to Play Guide for Descenders
+                    → Official Descenders Steam Page
                   </a>
                 </div>
               </div>
