@@ -6,32 +6,32 @@ const FeaturesSection = () => {
     {
       title: "Procedural Generation",
       description: "Every ride is unique with our advanced procedural world generation system. No two runs are ever the same, ensuring endless replayability and fresh challenges.",
-      icon: "https://cdn.akamai.steamstatic.com/steam/apps/466860/extras/Feature_ProcGen.png"
+      icon: "/icon1.png"
     },
     {
       title: "Physics-Based Gameplay",
       description: "Experience realistic bike physics that respond to every jump, turn, and crash. Master the art of momentum and balance to become the ultimate rider.",
-      icon: "https://cdn.akamai.steamstatic.com/steam/apps/466860/extras/Feature_Physics.png"
+      icon: "/icon2.png"
     },
     {
       title: "Extreme Downhill Action",
       description: "Race down steep mountain slopes, navigate treacherous terrain, and perform death-defying stunts in this adrenaline-pumping downhill adventure.",
-      icon: "https://cdn.akamai.steamstatic.com/steam/apps/466860/extras/Feature_Downhill.png"
+      icon: "/icon3.png"
     },
     {
       title: "Customizable Riders",
       description: "Personalize your character and bike with various customization options. Stand out from the crowd with unique gear and style combinations.",
-      icon: "https://cdn.akamai.steamstatic.com/steam/apps/466860/extras/Feature_Custom.png"
+      icon: "/icon4.png"
     },
     {
       title: "Multiple Game Modes",
       description: "Challenge yourself across different game modes, from casual exploration to intense time trials and stunt challenges.",
-      icon: "https://cdn.akamai.steamstatic.com/steam/apps/466860/extras/Feature_Modes.png"
+      icon: "/icon5.png"
     },
     {
       title: "Stunning Visuals",
       description: "Immerse yourself in beautiful, dynamic environments with realistic lighting and particle effects that bring every ride to life.",
-      icon: "https://cdn.akamai.steamstatic.com/steam/apps/466860/extras/Feature_Visual.png"
+      icon: "/icon1.png"
     }
   ];
 
@@ -54,11 +54,11 @@ const FeaturesSection = () => {
               className="bg-white/80 border-red-200 hover:border-racing-red/50 transition-all duration-300 hover:scale-105 group h-full paper-shadow"
             >
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 rounded-lg overflow-hidden">
+                <div className="w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 rounded-lg overflow-hidden bg-gradient-to-br from-red-50 to-red-100 p-2 shadow-inner">
                   <img 
                     src={feature.icon} 
                     alt={`${feature.title} icon`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain filter drop-shadow-sm"
                   />
                 </div>
                 <CardTitle className="font-orbitron font-bold text-lg sm:text-xl text-gray-800 group-hover:text-racing-red transition-colors">

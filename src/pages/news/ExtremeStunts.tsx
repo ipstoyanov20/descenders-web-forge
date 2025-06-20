@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
@@ -19,7 +20,7 @@ const ExtremeStunts = () => {
           <div className="bg-white/90 rounded-xl paper-shadow overflow-hidden">
             <div className="aspect-video overflow-hidden">
               <img 
-                src="https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_6c94c5d42a4c39c4a7dad0d4d8b8fcce5f9e4b9e.1920x1080.jpg"
+                src="/img6.jpg"
                 alt="Descenders extreme stunts and tricks"
                 className="w-full h-full object-cover"
               />
@@ -43,6 +44,14 @@ const ExtremeStunts = () => {
                 <p className="text-lg mb-6">
                   Ready to take your Descenders skills to the next level? These jaw-dropping stunts will separate the pros from the beginners. Master these techniques and become a legend on the trails.
                 </p>
+
+                <div className="my-8 rounded-xl overflow-hidden">
+                  <img 
+                    src="/img4.jpg"
+                    alt="Epic stunt performance in Descenders"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
 
                 <h2 className="font-orbitron font-bold text-xl sm:text-2xl racing-text-gradient mb-4">The Essential Stunts</h2>
                 

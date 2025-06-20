@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
@@ -19,7 +20,7 @@ const PhysicsControls = () => {
           <div className="bg-white/90 rounded-xl paper-shadow overflow-hidden">
             <div className="aspect-video overflow-hidden">
               <img 
-                src="https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_615455299355eaf552c0d7b0b967d1e40a0ab227.1920x1080.jpg"
+                src="/img3.jpg"
                 alt="Descenders physics controls gameplay"
                 className="w-full h-full object-cover"
               />
@@ -43,6 +44,14 @@ const PhysicsControls = () => {
                 <p className="text-lg mb-6">
                   Descenders' physics-based control system is what sets it apart from other mountain biking games. Every movement feels authentic and requires skill to master. In this comprehensive guide, we'll break down the essential techniques you need to become a pro rider.
                 </p>
+
+                <div className="my-8 rounded-xl overflow-hidden">
+                  <img 
+                    src="/img5.jpg"
+                    alt="Advanced physics controls demonstration"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
 
                 <h2 className="font-orbitron font-bold text-xl sm:text-2xl racing-text-gradient mb-4">Understanding the Basics</h2>
                 <p className="mb-4">

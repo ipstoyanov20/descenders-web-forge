@@ -1,32 +1,33 @@
+
 const GallerySection = () => {
   const images = [
     {
-      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_615455299355eaf552c0d7b0b967d1e40a0ab227.1920x1080.jpg",
+      url: "/img1.jpg",
       alt: "descenders-downhill-mountain-biking-action",
       title: "Extreme Downhill Racing"
     },
     {
-      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_34a1183cdb9b0b86bb1dd2c83e7b2c70b45aa617.1920x1080.jpg",
+      url: "/img2.jpg",
       alt: "descenders-bike-jump-stunt",
       title: "Death-Defying Stunts"
     },
     {
-      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_6c94c5d42a4c39c4a7dad0d4d8b8fcce5f9e4b9e.1920x1080.jpg",
+      url: "/img3.jpg",
       alt: "descenders-forest-trail-biking",
       title: "Forest Trail Adventures"
     },
     {
-      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_41e3c83dcebfb6a6d6bf5b87abf1b7c0c6d57bd7.1920x1080.jpg",
+      url: "/img4.jpg",
       alt: "descenders-mountain-sunset-ride",
       title: "Epic Mountain Views"
     },
     {
-      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_86b9e2c6efb9e55b5a3fe5b10c5a9fe17cf91e6b.1920x1080.jpg",
+      url: "/img5.jpg",
       alt: "descenders-professional-gameplay",
       title: "Professional Gameplay"
     },
     {
-      url: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_7a8b8d3c5a5c5e5c4c6b7d8e9f0a1b2c3d4e5f6.1920x1080.jpg",
+      url: "/img6.jpg",
       alt: "descenders-competitive-racing",
       title: "Competitive Racing"
     }

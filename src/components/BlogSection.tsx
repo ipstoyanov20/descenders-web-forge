@@ -12,7 +12,7 @@ const BlogSection = () => {
       date: "December 15, 2024",
       readTime: "5 min read",
       category: "Tutorial",
-      image: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_615455299355eaf552c0d7b0b967d1e40a0ab227.1920x1080.jpg"
+      image: "/img2.jpg"
     },
     {
       id: "procedural-world-generation",
@@ -21,7 +21,7 @@ const BlogSection = () => {
       date: "December 10, 2024",
       readTime: "7 min read",
       category: "Technology",
-      image: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_34a1183cdb9b0b86bb1dd2c83e7b2c70b45aa617.1920x1080.jpg"
+      image: "/img4.jpg"
     },
     {
       id: "extreme-stunts-guide",
@@ -30,7 +30,7 @@ const BlogSection = () => {
       date: "December 5, 2024",
       readTime: "6 min read",
       category: "Guide",
-      image: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_6c94c5d42a4c39c4a7dad0d4d8b8fcce5f9e4b9e.1920x1080.jpg"
+      image: "/img1.jpg"
     },
     {
       id: "community-spotlight",
@@ -39,7 +39,7 @@ const BlogSection = () => {
       date: "November 28, 2024",
       readTime: "4 min read",
       category: "Community",
-      image: "https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_41e3c83dcebfb6a6d6bf5b87abf1b7c0c6d57bd7.1920x1080.jpg"
+      image: "/img6.jpg"
     }
   ];
 

@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
@@ -19,7 +20,7 @@ const CommunitySpotlight = () => {
           <div className="bg-white/90 rounded-xl paper-shadow overflow-hidden">
             <div className="aspect-video overflow-hidden">
               <img 
-                src="https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_41e3c83dcebfb6a6d6bf5b87abf1b7c0c6d57bd7.1920x1080.jpg"
+                src="/img5.jpg"
                 alt="Descenders community highlights"
                 className="w-full h-full object-cover"
               />
@@ -43,6 +44,14 @@ const CommunitySpotlight = () => {
                 <p className="text-lg mb-6">
                   The Descenders community never ceases to amaze us with their incredible skills, creativity, and passion for extreme mountain biking. This month, we're highlighting some of the most spectacular moments captured by our amazing riders.
                 </p>
+
+                <div className="my-8 rounded-xl overflow-hidden">
+                  <img 
+                    src="/img3.jpg"
+                    alt="Community highlights and epic moments"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
 
                 <h2 className="font-orbitron font-bold text-xl sm:text-2xl racing-text-gradient mb-4">Epic Wins and Spectacular Fails</h2>
                 <p className="mb-4">

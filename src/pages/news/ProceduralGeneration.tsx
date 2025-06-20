@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
@@ -19,7 +20,7 @@ const ProceduralGeneration = () => {
           <div className="bg-white/90 rounded-xl paper-shadow overflow-hidden">
             <div className="aspect-video overflow-hidden">
               <img 
-                src="https://cdn.akamai.steamstatic.com/steam/apps/466860/ss_34a1183cdb9b0b86bb1dd2c83e7b2c70b45aa617.1920x1080.jpg"
+                src="/img1.jpg"
                 alt="Descenders procedural world generation"
                 className="w-full h-full object-cover"
               />
@@ -43,6 +44,14 @@ const ProceduralGeneration = () => {
                 <p className="text-lg mb-6">
                   One of Descenders' most impressive features is its procedural world generation system. Every time you start a new run, you're experiencing a completely unique world that has never existed before and will never exist again in exactly the same way.
                 </p>
+
+                <div className="my-8 rounded-xl overflow-hidden">
+                  <img 
+                    src="/img2.jpg"
+                    alt="Procedural terrain generation showcase"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
 
                 <h2 className="font-orbitron font-bold text-xl sm:text-2xl racing-text-gradient mb-4">How It Works</h2>
                 <p className="mb-4">
