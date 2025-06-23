@@ -4,10 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descenders - Extreme Downhill Mountain Biking by Noodlecake Studios</title>
-    <meta name="description" content="Experience the ultimate extreme downhill mountain biking adventure. Descenders features procedurally generated worlds, physics-based gameplay, and endless thrills. Available on iOS and Android.">
-    <link rel="icon" href="favicon.ico" type="image/png">
-    <link rel="stylesheet" href="styles/main.css">
+    <title>Descenders - Extreme Downhill Mountain Biking Game</title>
+    <meta name="description" content="Experience the ultimate extreme downhill mountain biking adventure in Descenders. Procedurally generated worlds, physics-based gameplay, and endless thrills await.">
+    <meta name="author" content="Noodlecake Studios Inc">
+    <meta name="keywords" content="descenders, mountain biking, extreme sports, downhill, gaming, noodlecake, physics-based, procedural generation, biking game, extreme racing">
+    <link rel="canonical" href="https://descenders-game.com/">
+    
+    <meta property="og:title" content="Descenders - Extreme Downhill Mountain Biking Game">
+    <meta property="og:description" content="Experience the ultimate extreme downhill mountain biking adventure in Descenders. Procedurally generated worlds, physics-based gameplay, and endless thrills await.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/favicon.ico">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@noodlecake">
+    <meta name="twitter:image" content="/favicon.ico">
+    
+    <link rel="icon" href="/favicon.ico" type="image/png">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
     <!-- Header -->
@@ -16,17 +29,17 @@
             <div class="header-content">
                 <a href="/" class="logo">
                     <div class="logo-icon">
-                        <img src="favicon.ico" alt="Descenders" style="width: 100%; height: 100%; border-radius: 0.5rem;">
+                        <img src="/favicon.ico" alt="Descenders" style="width: 100%; height: 100%; border-radius: 0.5rem;">
                     </div>
                     <span class="logo-text">DESCENDERS</span>
                 </a>
                 
                 <nav>
                     <ul class="nav-menu">
-                        <li><a href="/" class="nav-link">Home</a></li>
+                        <li><a href="#home" class="nav-link">Home</a></li>
                         <li><a href="/services/" class="nav-link">Services</a></li>
-                        <li><a href="/#features" class="nav-link">Features</a></li>
-                        <li><a href="/#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#features" class="nav-link">Features</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
                         <li><a href="/blog/" class="nav-link">News</a></li>
                         <li><a href="/about/" class="nav-link">About</a></li>
                         <li><a href="/contact/" class="nav-link">Contact</a></li>
@@ -40,33 +53,42 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="home" class="hero">
+        <div class="racing-stripe" style="position: absolute; top: 0; left: 0; right: 0;"></div>
+        <div class="racing-stripe" style="position: absolute; bottom: 0; left: 0; right: 0;"></div>
+        
+        <!-- Floating elements -->
+        <div style="position: absolute; top: 5rem; left: 1rem; width: 3rem; height: 3rem; background: rgba(220, 38, 38, 0.2); border-radius: 0.25rem; filter: blur(2px);" class="animate-float paper-shadow"></div>
+        <div style="position: absolute; bottom: 8rem; right: 1rem; width: 5rem; height: 5rem; background: #FEF2F2; border-radius: 0.25rem; filter: blur(2px); animation-delay: 1s;" class="animate-float paper-shadow"></div>
+        <div style="position: absolute; top: 50%; left: 25%; width: 3rem; height: 3rem; background: rgba(220, 38, 38, 0.3); border-radius: 0.25rem; filter: blur(2px); animation-delay: 2s;" class="animate-float paper-shadow"></div>
+        
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">EXTREME DOWNHILL MOUNTAIN BIKING</h1>
+                <h1 class="hero-title">DESCENDERS</h1>
+                
                 <p class="hero-subtitle">
-                    Experience the ultimate adrenaline rush with procedurally generated worlds, 
-                    physics-based gameplay, and endless mountain biking adventures. 
-                    Master the art of downhill racing in stunning environments.
+                    Experience the ultimate extreme downhill mountain biking adventure. 
+                    Navigate procedurally generated worlds with physics-based gameplay 
+                    that will test your skills and push your limits.
                 </p>
                 
                 <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary" onclick="openPlayStore()">Download Now</a>
-                    <a href="#features" class="btn btn-outline">Explore Features</a>
+                    <a href="#" class="btn btn-primary" onclick="openAppStore()">Download on App Store</a>
+                    <a href="#" class="btn btn-outline" onclick="openPlayStore()">Download on Google Play</a>
                 </div>
                 
                 <div class="hero-stats">
                     <div class="stat-card">
-                        <div class="stat-icon">🏔️</div>
-                        <div class="stat-text">Procedural Worlds</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon">🚵</div>
-                        <div class="stat-text">Physics-Based</div>
+                        <div class="stat-icon">∞</div>
+                        <p class="stat-text">Procedural Worlds</p>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon">⚡</div>
-                        <div class="stat-text">Extreme Stunts</div>
+                        <p class="stat-text">Physics-Based</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🏆</div>
+                        <p class="stat-text">Extreme Sports</p>
                     </div>
                 </div>
             </div>
@@ -74,98 +96,111 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features-section">
+    <section id="features" class="section" style="background: linear-gradient(to bottom, white, #FEF2F2);">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Game Features</h2>
                 <p class="section-subtitle">
-                    Discover what makes Descenders the ultimate mountain biking experience
+                    Discover what makes Descenders the ultimate extreme mountain biking experience
                 </p>
             </div>
             
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon1.png" alt="Procedural Generation icon">
+            <div class="grid grid-1 grid-sm-2 grid-xl-3">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <img src="/icon1.png" alt="Procedural Generation icon">
+                        </div>
+                        <h3 class="card-title">Procedural Generation</h3>
                     </div>
-                    <h3 class="feature-title">Procedural Generation</h3>
-                    <p class="feature-description">
-                        Every ride is unique with our advanced procedural generation system. 
-                        Experience endless variety in terrain, obstacles, and challenges 
-                        that keep you coming back for more.
-                    </p>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Every ride is unique with our advanced procedural world generation system. No two runs are ever the same, ensuring endless replayability and fresh challenges.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon2.png" alt="Physics-Based Gameplay icon">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <img src="/icon2.png" alt="Physics-Based Gameplay icon">
+                        </div>
+                        <h3 class="card-title">Physics-Based Gameplay</h3>
                     </div>
-                    <h3 class="feature-title">Physics-Based Gameplay</h3>
-                    <p class="feature-description">
-                        Feel every bump, jump, and crash with our realistic physics engine. 
-                        Master the art of momentum, balance, and control as you navigate 
-                        through challenging mountain terrain.
-                    </p>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Experience realistic bike physics that respond to every jump, turn, and crash. Master the art of momentum and balance to become the ultimate rider.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon3.png" alt="Team System icon">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <img src="/icon3.png" alt="Extreme Downhill Action icon">
+                        </div>
+                        <h3 class="card-title">Extreme Downhill Action</h3>
                     </div>
-                    <h3 class="feature-title">Team System</h3>
-                    <p class="feature-description">
-                        Choose your tribe and compete for reputation. Each team offers 
-                        unique challenges and rewards, creating a dynamic progression 
-                        system that adapts to your playstyle.
-                    </p>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Race down steep mountain slopes, navigate treacherous terrain, and perform death-defying stunts in this adrenaline-pumping downhill adventure.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon4.png" alt="Customization icon">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <img src="/icon4.png" alt="Customizable Riders icon">
+                        </div>
+                        <h3 class="card-title">Customizable Riders</h3>
                     </div>
-                    <h3 class="feature-title">Bike Customization</h3>
-                    <p class="feature-description">
-                        Customize your ride with a variety of bikes, parts, and gear. 
-                        Unlock new equipment as you progress and create the perfect 
-                        setup for your riding style.
-                    </p>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Personalize your character and bike with various customization options. Stand out from the crowd with unique gear and style combinations.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon5.png" alt="Multiplayer icon">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <img src="/icon5.png" alt="Multiple Game Modes icon">
+                        </div>
+                        <h3 class="card-title">Multiple Game Modes</h3>
                     </div>
-                    <h3 class="feature-title">Multiplayer Action</h3>
-                    <p class="feature-description">
-                        Race against friends and players worldwide. Compete in daily 
-                        challenges, leaderboards, and special events to prove you're 
-                        the ultimate downhill rider.
-                    </p>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Challenge yourself across different game modes, from casual exploration to intense time trials and stunt challenges.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="icon1.png" alt="Stunts icon">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <img src="/icon1.png" alt="Stunning Visuals icon">
+                        </div>
+                        <h3 class="card-title">Stunning Visuals</h3>
                     </div>
-                    <h3 class="feature-title">Epic Stunts</h3>
-                    <p class="feature-description">
-                        Pull off incredible tricks and stunts to boost your reputation. 
-                        Master backflips, tailwhips, and other jaw-dropping maneuvers 
-                        while maintaining control at breakneck speeds.
-                    </p>
+                    <div class="card-content">
+                        <p class="card-description">
+                            Immerse yourself in beautiful, dynamic environments with realistic lighting and particle effects that bring every ride to life.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section">
+    <section id="gallery" class="section" style="background: linear-gradient(to bottom, var(--paper-gray), white);">
+        <div class="racing-stripe" style="margin-bottom: 2rem;"></div>
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Game Gallery</h2>
                 <p class="section-subtitle">
-                    See Descenders in action with stunning visuals and gameplay moments
+                    Experience the thrill and beauty of extreme mountain biking in Descenders
                 </p>
             </div>
             
@@ -173,9 +208,9 @@
                 <div class="gallery-item">
                     <div class="gallery-item-inner">
                         <div class="gallery-image">
-                            <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=800&h=450&fit=crop&crop=center" alt="Mountain biking downhill action">
+                            <img src="/img1.jpg" alt="descenders-downhill-mountain-biking-action" loading="lazy">
                             <div class="gallery-overlay">
-                                <h4 class="gallery-title">Downhill Rush</h4>
+                                <h3 class="gallery-title">Extreme Downhill Racing</h3>
                             </div>
                         </div>
                     </div>
@@ -184,9 +219,9 @@
                 <div class="gallery-item">
                     <div class="gallery-item-inner">
                         <div class="gallery-image">
-                            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=450&fit=crop&crop=center" alt="Extreme mountain terrain">
+                            <img src="/img2.jpg" alt="descenders-bike-jump-stunt" loading="lazy">
                             <div class="gallery-overlay">
-                                <h4 class="gallery-title">Epic Terrain</h4>
+                                <h3 class="gallery-title">Death-Defying Stunts</h3>
                             </div>
                         </div>
                     </div>
@@ -195,9 +230,9 @@
                 <div class="gallery-item">
                     <div class="gallery-item-inner">
                         <div class="gallery-image">
-                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=450&fit=crop&crop=center" alt="Bike customization options">
+                            <img src="/img3.jpg" alt="descenders-forest-trail-biking" loading="lazy">
                             <div class="gallery-overlay">
-                                <h4 class="gallery-title">Bike Customization</h4>
+                                <h3 class="gallery-title">Forest Trail Adventures</h3>
                             </div>
                         </div>
                     </div>
@@ -206,9 +241,9 @@
                 <div class="gallery-item">
                     <div class="gallery-item-inner">
                         <div class="gallery-image">
-                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=450&fit=crop&crop=center" alt="Multiplayer racing action">
+                            <img src="/img4.jpg" alt="descenders-mountain-sunset-ride" loading="lazy">
                             <div class="gallery-overlay">
-                                <h4 class="gallery-title">Multiplayer Racing</h4>
+                                <h3 class="gallery-title">Epic Mountain Views</h3>
                             </div>
                         </div>
                     </div>
@@ -217,9 +252,9 @@
                 <div class="gallery-item">
                     <div class="gallery-item-inner">
                         <div class="gallery-image">
-                            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=450&fit=crop&crop=center" alt="Stunt performances">
+                            <img src="/img5.jpg" alt="descenders-professional-gameplay" loading="lazy">
                             <div class="gallery-overlay">
-                                <h4 class="gallery-title">Epic Stunts</h4>
+                                <h3 class="gallery-title">Professional Gameplay</h3>
                             </div>
                         </div>
                     </div>
@@ -228,142 +263,113 @@
                 <div class="gallery-item">
                     <div class="gallery-item-inner">
                         <div class="gallery-image">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=450&fit=crop&crop=center" alt="Team challenges">
+                            <img src="/img6.jpg" alt="descenders-competitive-racing" loading="lazy">
                             <div class="gallery-overlay">
-                                <h4 class="gallery-title">Team Challenges</h4>
+                                <h3 class="gallery-title">Competitive Racing</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="racing-stripe" style="margin-top: 2rem;"></div>
     </section>
 
     <!-- Blog Section -->
-    <section id="blog" class="blog-section">
+    <section id="blog" class="section" style="background: linear-gradient(to bottom, #FEF2F2, var(--paper-gray));">
+        <div class="racing-stripe" style="margin-bottom: 2rem;"></div>
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Latest News</h2>
+                <h2 class="section-title">Latest News & Updates</h2>
                 <p class="section-subtitle">
-                    Stay updated with the latest Descenders news, tips, and community highlights
+                    Stay updated with the latest tips, tricks, and community highlights from the world of Descenders
                 </p>
             </div>
             
-            <div class="blog-grid">
-                <article class="blog-card">
+            <div class="grid grid-1 grid-lg-2">
+                <div class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=450&fit=crop&crop=center" alt="Physics controls guide">
+                        <img src="/img2.jpg" alt="blog-post-mastering-physics-controls">
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <span class="blog-category">Guide</span>
+                            <span class="blog-category">Tutorial</span>
                             <span class="blog-time">5 min read</span>
                         </div>
-                        <h3 class="blog-title">Mastering Physics Controls</h3>
+                        <h3 class="blog-title">Mastering Physics-Based Controls in Descenders</h3>
                         <p class="blog-excerpt">
-                            Learn advanced techniques for controlling your bike's physics. Master momentum, 
-                            balance, and timing to become the ultimate downhill rider.
+                            Learn advanced techniques for controlling your bike through challenging terrain and executing perfect landings in this comprehensive guide.
                         </p>
                         <div class="blog-footer">
-                            <span class="blog-date">Dec 20, 2024</span>
+                            <span class="blog-date">December 15, 2024</span>
                             <a href="/blog/mastering-physics-controls/" class="blog-read-more">Read More</a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="blog-card">
+                <div class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=450&fit=crop&crop=center" alt="Procedural world generation">
+                        <img src="/img4.jpg" alt="blog-post-procedural-world-generation">
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="blog-category">Technology</span>
                             <span class="blog-time">7 min read</span>
                         </div>
-                        <h3 class="blog-title">Procedural World Generation</h3>
+                        <h3 class="blog-title">The Art of Procedural World Generation</h3>
                         <p class="blog-excerpt">
-                            Discover how our advanced algorithms create unique mountain environments 
-                            for every ride, ensuring endless variety and replayability.
+                            Discover how our advanced algorithms create unique, challenging worlds for every single ride, ensuring no two experiences are alike.
                         </p>
                         <div class="blog-footer">
-                            <span class="blog-date">Dec 18, 2024</span>
+                            <span class="blog-date">December 10, 2024</span>
                             <a href="/blog/procedural-world-generation/" class="blog-read-more">Read More</a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="blog-card">
+                <div class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=450&fit=crop&crop=center" alt="Extreme stunts guide">
+                        <img src="/img1.jpg" alt="blog-post-extreme-stunts-guide">
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <span class="blog-category">Tips</span>
-                            <span class="blog-time">4 min read</span>
+                            <span class="blog-category">Guide</span>
+                            <span class="blog-time">6 min read</span>
                         </div>
-                        <h3 class="blog-title">Extreme Stunts Guide</h3>
+                        <h3 class="blog-title">Top 10 Extreme Stunts You Can Pull Off</h3>
                         <p class="blog-excerpt">
-                            Pull off incredible aerial maneuvers and build your reputation. 
-                            Learn the secrets behind backflips, tailwhips, and more.
+                            From backflips to tailwhips, explore the most spectacular stunts possible in Descenders and learn how to execute them perfectly.
                         </p>
                         <div class="blog-footer">
-                            <span class="blog-date">Dec 15, 2024</span>
+                            <span class="blog-date">December 5, 2024</span>
                             <a href="/blog/extreme-stunts-guide/" class="blog-read-more">Read More</a>
                         </div>
                     </div>
-                </article>
+                </div>
 
-                <article class="blog-card">
+                <div class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=450&fit=crop&crop=center" alt="Community spotlight">
+                        <img src="/img6.jpg" alt="blog-post-community-spotlight">
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="blog-category">Community</span>
-                            <span class="blog-time">6 min read</span>
+                            <span class="blog-time">4 min read</span>
                         </div>
-                        <h3 class="blog-title">Community Spotlight</h3>
+                        <h3 class="blog-title">Community Spotlight: Best User-Created Moments</h3>
                         <p class="blog-excerpt">
-                            Meet amazing riders from our community and see their incredible 
-                            achievements, custom setups, and favorite trails.
+                            Check out the most incredible moments captured by our amazing community of riders, featuring jaw-dropping stunts and epic fails.
                         </p>
                         <div class="blog-footer">
-                            <span class="blog-date">Dec 12, 2024</span>
+                            <span class="blog-date">November 28, 2024</span>
                             <a href="/blog/community-spotlight/" class="blog-read-more">Read More</a>
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
             
-            <div style="text-align: center; margin-top: 3rem;">
+            <div style="text-align: center; margin-top: 2rem;">
                 <a href="/blog/" class="btn btn-primary">View All Articles</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">
-                    Have questions about Descenders? We'd love to hear from you!
-                </p>
-            </div>
-            
-            <div style="max-width: 32rem; margin: 0 auto; text-align: center;">
-                <div style="background: rgba(255, 255, 255, 0.9); padding: 2rem; border-radius: 0.75rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 2rem;">
-                    <h3 style="font-family: 'Orbitron', monospace; font-weight: 700; color: var(--racing-red); margin-bottom: 1rem;">Support & Information</h3>
-                    <p style="color: #374151; margin-bottom: 1.5rem;">
-                        For game support, feedback, or business inquiries, contact our team at Noodlecake Studios.
-                    </p>
-                    <a href="/contact/" class="btn btn-primary">Contact Us</a>
-                </div>
-                
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="#" class="btn btn-primary" onclick="openPlayStore()">Download Game</a>
-                    <a href="/about/" class="btn btn-outline">Learn More</a>
-                </div>
             </div>
         </div>
     </section>
@@ -375,7 +381,7 @@
                 <div class="footer-section">
                     <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
                         <div style="width: 2.5rem; height: 2.5rem; background: linear-gradient(135deg, #8B5CF6, #3B82F6); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center;">
-                            <img src="favicon.ico" style="border-radius: 0.5rem;" alt="Descenders">
+                            <img src="/favicon.ico" style="border-radius: 0.5rem;" alt="Descenders">
                         </div>
                         <h3 style="font-family: 'Orbitron', monospace; font-weight: 700; font-size: 1.5rem;" class="racing-text-gradient">
                             DESCENDERS
@@ -393,10 +399,10 @@
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="/services/">Services</a></li>
-                        <li><a href="/#features">Features</a></li>
-                        <li><a href="/#gallery">Gallery</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="/blog/">News</a></li>
                         <li><a href="/about/">About</a></li>
                         <li><a href="/contact/">Contact</a></li>
@@ -432,6 +438,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 </html>

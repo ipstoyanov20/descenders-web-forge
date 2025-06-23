@@ -1,0 +1,114 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 0 0% 5%;
+
+    --card: 0 0% 95%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 95%;
+    --popover-foreground: 0 0% 5%;
+
+    --primary: 0 84% 60%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 5%;
+
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 85%;
+    --input: 0 0% 90%;
+    --ring: 0 84% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 95%;
+    --sidebar-foreground: 0 0% 5%;
+    --sidebar-primary: 0 84% 60%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent-foreground: 0 0% 5%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 0 84% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-rajdhani;
+    background-image: 
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 20px,
+        rgba(239, 68, 68, 0.05) 20px,
+        rgba(239, 68, 68, 0.05) 40px
+      );
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .racing-gradient {
+    background: linear-gradient(135deg, #DC2626 0%, #EF4444 50%, #FFFFFF 100%);
+  }
+  
+  .racing-text-gradient {
+    background: linear-gradient(135deg, #DC2626 0%, #EF4444 50%, #B91C1C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .racing-border-gradient {
+    background: linear-gradient(135deg, #DC2626 0%, #EF4444 50%, #FFFFFF 100%);
+    padding: 2px;
+    border-radius: 12px;
+  }
+  
+  .racing-border-gradient > * {
+    background: hsl(var(--background));
+    border-radius: 10px;
+  }
+  
+  .paper-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .racing-stripe {
+    background: repeating-linear-gradient(
+      90deg,
+      #DC2626 0px,
+      #DC2626 20px,
+      #FFFFFF 20px,
+      #FFFFFF 40px
+    );
+    height: 8px;
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
