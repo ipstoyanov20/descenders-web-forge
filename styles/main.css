@@ -285,12 +285,24 @@ html {
   padding: 0 1rem;
 }
 
+.hero-stats-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 .stat-card {
   text-align: center;
   background: rgba(255, 255, 255, 0.5);
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  min-width: 140px;
 }
 
 .stat-icon {
@@ -307,6 +319,7 @@ html {
 .stat-text {
   color: #6B7280;
   font-size: 0.875rem;
+  font-weight: 600;
 }
 
 /* Card Styles */
@@ -663,6 +676,10 @@ html {
   }
   
   .grid-sm-2 { grid-template-columns: repeat(2, 1fr); }
+  
+  .hero-stats-inline {
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -670,6 +687,7 @@ html {
     gap: 3rem;
   }
   
+  .grid-lg-2 { grid-template-columns: repeat(2, 1fr); }
   .grid-lg-3 { grid-template-columns: repeat(3, 1fr); }
 }
 
