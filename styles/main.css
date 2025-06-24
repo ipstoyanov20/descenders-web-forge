@@ -561,6 +561,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero {
         height: 120vh;
+        padding-top: 80px;
     }
 
     .hero-title {
@@ -603,6 +604,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
     .hero {
         height: 130vh;
+        padding-top: 100px;
     }
 
     .hero-title {
