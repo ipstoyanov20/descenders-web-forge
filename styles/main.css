@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 0.3s;
 }
 
-/* Hero Section */
+/* Hero Section with CSS Motion Effects */
 .hero {
     position: relative;
     height: 100vh;
@@ -110,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #1f2937 100%);
 }
 
 .hero-background {
@@ -121,10 +122,48 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -2;
 }
 
-.hero-bg-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* Animated Background Elements */
+.hero-background::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 70%, rgba(220, 38, 38, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(153, 27, 27, 0.4) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(220, 38, 38, 0.2) 0%, transparent 50%);
+    animation: moveBackground 20s ease-in-out infinite;
+    filter: blur(60px);
+}
+
+.hero-background::after {
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle at 20% 20%, rgba(220, 38, 38, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 80% 60%, rgba(153, 27, 27, 0.2) 0%, transparent 40%),
+                radial-gradient(circle at 40% 90%, rgba(220, 38, 38, 0.1) 0%, transparent 40%);
+    animation: moveBackground 15s ease-in-out infinite reverse;
+    filter: blur(40px);
+}
+
+@keyframes moveBackground {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(-10px, -20px) rotate(1deg);
+    }
+    50% {
+        transform: translate(20px, 10px) rotate(-1deg);
+    }
+    75% {
+        transform: translate(-15px, 15px) rotate(0.5deg);
+    }
 }
 
 .hero-overlay {
@@ -133,13 +172,14 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     z-index: -1;
 }
 
 .hero-content {
     z-index: 1;
     color: #fff;
+    position: relative;
 }
 
 .hero-title {
@@ -147,6 +187,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 1s ease-out;
 }
 
 .hero-subtitle {
@@ -154,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     color: #dc2626;
     font-weight: 600;
+    animation: fadeInUp 1.2s ease-out;
 }
 
 .hero-description {
@@ -162,6 +204,18 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    animation: fadeInUp 1.4s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero-features {
@@ -170,6 +224,7 @@ h1, h2, h3, h4, h5, h6 {
     gap: 3rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
+    animation: fadeInUp 1.6s ease-out;
 }
 
 .hero-feature {
@@ -177,12 +232,28 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero-feature:hover {
+    transform: translateY(-5px);
+    background: rgba(220, 38, 38, 0.2);
 }
 
 .feature-icon {
     width: 48px;
     height: 48px;
     filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.hero-feature:hover .feature-icon {
+    filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(220, 38, 38, 0.8));
 }
 
 .hero-feature span {
@@ -195,9 +266,10 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+    animation: fadeInUp 1.8s ease-out;
 }
 
-/* Buttons */
+/* ... keep existing code (Buttons section) */
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -233,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-2px);
 }
 
-/* Features Section */
+/* ... keep existing code (Features Section and all subsequent sections unchanged) */
 .features {
     padding: 5rem 0;
     background: linear-gradient(to bottom, #fff, #fef2f2);
