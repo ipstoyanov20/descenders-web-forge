@@ -1,0 +1,158 @@
+
+/* Article Page Styles */
+.article-page {
+    padding-top: 100px;
+    padding-bottom: 3rem;
+    background: #fff;
+}
+
+.breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.breadcrumb a {
+    color: #dc2626;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.article-category {
+    background: #dc2626;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.article-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.article-meta {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.article-meta span {
+    margin: 0 1rem;
+}
+
+.article-hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.article-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #374151;
+}
+
+.article-lead {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-left: 4px solid #dc2626;
+    border-radius: 0 8px 8px 0;
+}
+
+.article-content h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 2.5rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #fca5a5;
+}
+
+.article-content p {
+    margin-bottom: 1.5rem;
+}
+
+.article-footer {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.article-share {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.share-link {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.share-link:hover {
+    color: #dc2626;
+}
+
+/* Responsive Design for Articles */
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 2rem;
+    }
+    
+    .article-lead {
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    
+    .article-content {
+        font-size: 1rem;
+    }
+    
+    .article-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .article-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .article-meta span {
+        display: block;
+        margin: 0.25rem 0;
+    }
+}

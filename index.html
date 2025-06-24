@@ -1,33 +1,259 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descenders - Extreme Downhill Mountain Biking Game</title>
-    <meta name="description" content="Experience the ultimate extreme downhill mountain biking adventure in Descenders. Procedurally generated worlds, physics-based gameplay, and endless thrills await." />
-    <meta name="author" content="Noodlecake Studios Inc" />
-    <meta name="keywords" content="descenders, mountain biking, extreme sports, downhill, gaming, noodlecake, physics-based, procedural generation, biking game, extreme racing" />
-    <link rel="canonical" href="https://descenders-game.com/" />
-
-    <meta property="og:title" content="Descenders - Extreme Downhill Mountain Biking Game" />
-    <meta property="og:description" content="Experience the ultimate extreme downhill mountain biking adventure in Descenders. Procedurally generated worlds, physics-based gameplay, and endless thrills await." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/favicon.ico" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@noodlecake" />
-    <meta name="twitter:image" content="/favicon.ico" />
+    <meta name="description" content="Experience the ultimate extreme downhill mountain biking adventure in Descenders. Procedurally generated worlds, physics-based gameplay, and endless thrills await.">
+    <meta name="author" content="Noodlecake Studios Inc">
+    <meta name="keywords" content="descenders, mountain biking, extreme sports, downhill, gaming, noodlecake, physics-based, procedural generation, biking game, extreme racing">
+    <link rel="canonical" href="https://descenders-game.com/">
     
-    <link rel="icon" href="/favicon.ico" type="image/png">
+    <meta property="og:title" content="Descenders - Extreme Downhill Mountain Biking Game">
+    <meta property="og:description" content="Experience the ultimate extreme downhill mountain biking adventure in Descenders. Procedurally generated worlds, physics-based gameplay, and endless thrills await.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/images/favicon.ico">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@noodlecake">
+    <meta name="twitter:image" content="/images/favicon.ico">
+    
+    <link rel="icon" href="/images/favicon.ico" type="image/png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
+    
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>DESCENDERS</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link active">Home</a></li>
+                <li><a href="/about/" class="nav-link">About</a></li>
+                <li><a href="/news/" class="nav-link">News</a></li>
+                <li><a href="/contact/" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="/images/img1.jpg" alt="Descenders mountain biking" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="hero-title">DESCENDERS</h1>
+            <p class="hero-subtitle">Extreme Downhill Mountain Biking</p>
+            <p class="hero-description">Experience the ultimate adrenaline rush with procedurally generated worlds, realistic physics, and endless downhill action.</p>
+            
+            <!-- Hero Features Icons -->
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <img src="/images/icon1.png" alt="Procedural Worlds" class="feature-icon">
+                    <span>Procedural Worlds</span>
+                </div>
+                <div class="hero-feature">
+                    <img src="/images/icon2.png" alt="Physics-Based" class="feature-icon">
+                    <span>Physics-Based</span>
+                </div>
+                <div class="hero-feature">
+                    <img src="/images/icon3.png" alt="Extreme Sports" class="feature-icon">
+                    <span>Extreme Sports</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="#features" class="btn btn-primary">Discover Features</a>
+                <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Game Features</h2>
+            <p class="section-subtitle">Discover what makes Descenders the ultimate extreme mountain biking experience</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/images/icon1.png" alt="Procedural Generation" class="feature-icon-large">
+                    </div>
+                    <h3>Procedural Generation</h3>
+                    <p>Every ride is unique with our advanced procedural world generation system. No two runs are ever the same, ensuring endless replayability and fresh challenges.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/images/icon2.png" alt="Physics-Based Gameplay" class="feature-icon-large">
+                    </div>
+                    <h3>Physics-Based Gameplay</h3>
+                    <p>Experience realistic bike physics that respond to every jump, turn, and crash. Master the art of momentum and balance to become the ultimate rider.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/images/icon3.png" alt="Extreme Downhill Action" class="feature-icon-large">
+                    </div>
+                    <h3>Extreme Downhill Action</h3>
+                    <p>Race down steep mountain slopes, navigate treacherous terrain, and perform death-defying stunts in this adrenaline-pumping downhill adventure.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/images/icon4.png" alt="Customizable Riders" class="feature-icon-large">
+                    </div>
+                    <h3>Customizable Riders</h3>
+                    <p>Personalize your character and bike with various customization options. Stand out from the crowd with unique gear and style combinations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/images/icon5.png" alt="Multiple Game Modes" class="feature-icon-large">
+                    </div>
+                    <h3>Multiple Game Modes</h3>
+                    <p>Challenge yourself across different game modes, from casual exploration to intense time trials and stunt challenges.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <img src="/images/icon1.png" alt="Stunning Visuals" class="feature-icon-large">
+                    </div>
+                    <h3>Stunning Visuals</h3>
+                    <p>Immerse yourself in beautiful, dynamic environments with realistic lighting and particle effects that bring every ride to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Game Gallery</h2>
+            <p class="section-subtitle">Explore stunning visuals and exciting gameplay moments</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="/images/img2.jpg" alt="Mountain trail descent" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/img3.jpg" alt="Extreme stunts and jumps" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/img4.jpg" alt="Beautiful mountain landscapes" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/img5.jpg" alt="Bike customization options" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/img6.jpg" alt="Challenging terrain navigation" class="gallery-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="/images/img7.jpg" alt="Multiplayer racing action" class="gallery-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest News</h2>
+            <p class="section-subtitle">Stay updated with the latest developments and community highlights</p>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <img src="/images/img2.jpg" alt="Procedural Generation" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">Development</span>
+                        <h3>The Science Behind Procedural Generation</h3>
+                        <p>Discover how our advanced algorithms create infinite, unique worlds for every ride. Learn about the technology that makes each descent a new adventure.</p>
+                        <a href="/news/procedural-generation/" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="/images/img3.jpg" alt="Physics and Controls" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">Gameplay</span>
+                        <h3>Mastering Physics and Controls</h3>
+                        <p>Get tips and tricks from pro players on how to master the realistic physics system. Learn advanced techniques for better control and epic stunts.</p>
+                        <a href="/news/physics-controls/" class="blog-link">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <img src="/images/img4.jpg" alt="Community Spotlight" class="blog-image">
+                    <div class="blog-content">
+                        <span class="blog-category">Community</span>
+                        <h3>Community Spotlight: Epic Runs</h3>
+                        <p>Check out the most amazing runs and stunts shared by our incredible community. See what's possible when skill meets creativity.</p>
+                        <a href="/news/community-spotlight/" class="blog-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DESCENDERS</h3>
+                    <p>Experience the ultimate extreme downhill mountain biking adventure with procedurally generated worlds and physics-based gameplay.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/news/">News</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                        <li><a href="/terms/">Terms of Service</a></li>
+                        <li><a href="/cookies/">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Noodlecake Studios Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/main.js"></script>
+</body>
 </html>
