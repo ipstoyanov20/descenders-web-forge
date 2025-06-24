@@ -109,8 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section with CSS Motion Effects */
 .hero {
-    position: sticky;
-    top: 0;
+    position: relative;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -118,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     overflow: hidden;
     background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #1f2937 100%);
-    z-index: 1;
 }
 
 .hero-background {
@@ -561,6 +559,10 @@ h1, h2, h3, h4, h5, h6 {
         display: flex;
     }
 
+    .hero {
+        height: 120vh;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
@@ -599,6 +601,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        height: 130vh;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
