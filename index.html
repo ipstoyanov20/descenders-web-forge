@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +31,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <h1>DESCENDERS</h1>
+                <a href="/"><h1>DESCENDERS</h1></a>
             </div>
             <ul class="nav-menu">
                 <li><a href="/" class="nav-link active">Home</a></li>
@@ -91,7 +90,7 @@
             </div>
             
             <div class="hero-buttons">
-                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.noodlecake.descenders&hl=bg" class="btn btn-primary">Download on google play</a>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.noodlecake.descenders&hl=bg" class="btn btn-primary">Download on Google Play</a>
                 <a href="/contact/" class="btn btn-secondary">Get in Touch</a>
             </div>
         </div>
@@ -106,7 +105,11 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <img src="/images/icon1.png" alt="Procedural Generation" class="feature-icon-large">
+                        <svg class="feature-icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="7.5,9.5 12,12 16.5,9.5"/>
+                            <polyline points="12,12 12,21"/>
+                        </svg>
                     </div>
                     <h3>Procedural Generation</h3>
                     <p>Every ride is unique with our advanced procedural world generation system. No two runs are ever the same, ensuring endless replayability and fresh challenges.</p>
@@ -114,7 +117,10 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <img src="/images/icon2.png" alt="Physics-Based Gameplay" class="feature-icon-large">
+                        <svg class="feature-icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
                     </div>
                     <h3>Physics-Based Gameplay</h3>
                     <p>Experience realistic bike physics that respond to every jump, turn, and crash. Master the art of momentum and balance to become the ultimate rider.</p>
@@ -122,7 +128,9 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <img src="/images/icon3.png" alt="Extreme Downhill Action" class="feature-icon-large">
+                        <svg class="feature-icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 21l8-9-8-9"/>
+                        </svg>
                     </div>
                     <h3>Extreme Downhill Action</h3>
                     <p>Race down steep mountain slopes, navigate treacherous terrain, and perform death-defying stunts in this adrenaline-pumping downhill adventure.</p>
@@ -130,7 +138,10 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <img src="/images/icon4.png" alt="Customizable Riders" class="feature-icon-large">
+                        <svg class="feature-icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
                     </div>
                     <h3>Customizable Riders</h3>
                     <p>Personalize your character and bike with various customization options. Stand out from the crowd with unique gear and style combinations.</p>
@@ -138,7 +149,11 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <img src="/images/icon5.png" alt="Multiple Game Modes" class="feature-icon-large">
+                        <svg class="feature-icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
                     </div>
                     <h3>Multiple Game Modes</h3>
                     <p>Challenge yourself across different game modes, from casual exploration to intense time trials and stunt challenges.</p>
@@ -146,7 +161,10 @@
                 
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <img src="/images/icon1.png" alt="Stunning Visuals" class="feature-icon-large">
+                        <svg class="feature-icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
                     </div>
                     <h3>Stunning Visuals</h3>
                     <p>Immerse yourself in beautiful, dynamic environments with realistic lighting and particle effects that bring every ride to life.</p>
@@ -255,16 +273,32 @@
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#" aria-label="Facebook">📘</a>
-                        <a href="#" aria-label="Twitter">🐦</a>
-                        <a href="#" aria-label="Instagram">📷</a>
-                        <a href="#" aria-label="YouTube">📺</a>
+                        <a href="#" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.323-1.297C4.198 14.895 3.708 13.744 3.708 12.447s.49-2.448 1.418-3.323c.875-.807 2.026-1.297 3.323-1.297s2.448.49 3.323 1.297c.928.875 1.418 2.026 1.418 3.323s-.49 2.448-1.418 3.244c-.875.807-2.026 1.297-3.323 1.297zm7.83-9.405c-.49 0-.875-.385-.875-.875s.385-.875.875-.875.875.385.875.875-.385.875-.875.875zm-4.262 9.405c-2.448 0-4.437-1.989-4.437-4.437s1.989-4.437 4.437-4.437 4.437 1.989 4.437 4.437-1.989 4.437-4.437 4.437z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Noodlecake Studios Inc. All rights reserved.</p>
+                <p>&copy; 2025 Noodlecake Studios Inc. All rights reserved.</p>
             </div>
         </div>
     </footer>
